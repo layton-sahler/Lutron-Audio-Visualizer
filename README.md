@@ -9,7 +9,7 @@ A real-time audio spectrum visualizer that utilizes Fast Fourier Transforms (FFT
 * **Signal Conditioning:** Used frequency bin mapping to isolate 7 distinct audio bands for the visualization.
 * **Real-time Processing:** Optimized sampling rates to ensure low-latency response between audio input and LED output.
 
-### 2. Algorithmic Matrix Mapping (Serpentine Logic)
+### 2. Algorithmic Matrix Mapping
 To minimize wiring complexity, the LED strip was laid out in a zig-zag pattern. Due to wiring constraints every other column is physically inverted, so I developed a custom mapping algorithm to translate a standard (x, y) coordinate system into the correct LED index:
 
 ```cpp
